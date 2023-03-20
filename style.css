@@ -1,0 +1,183 @@
+body{
+    width: 100%;
+    align-items: center;
+    margin: auto;
+    background-color: rgb(255, 255, 255)
+}
+
+#Hero{
+    background-image: url(imgs/erik-mclean-27kCu7bXGEI-unsplash.jpg);
+    height: 400px;
+    padding: 50px 60px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    position: relative;
+}
+
+#Hero h1{
+    color: white;
+}
+.Subtext .paragraph{
+    text-align: left;
+    position: absolute;
+    display: inline-flex;
+    z-index: 99;
+    bottom: 10px;
+    width: 60%;
+    max-height: 60%;
+    font-size: 20px;
+    top: 75%;
+    left: 65%;
+    transform: translate(-100%, -110%);
+    color: rgb(240, 19, 30);
+    background-color: rgb(255, 255, 255)
+}
+
+header{
+    grid-area: header;
+    color: white;
+    background-color: rgb(240, 19, 30);
+    font-size: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+header .centered{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 200%;
+    text-align: center;
+}
+
+header a{
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    margin-top: 80px;
+    margin-left: 50px;
+    text-decoration: none;
+}
+
+#icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    left: 10%;
+    margin-top: 85px;
+    width: 45px;
+    height: 45px;
+    display: none;
+}
+
+.Gridlayout{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Movie Grid Layout*/
+
+.Gallery1 {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 4fr));
+    grid-auto-rows: 200px;
+    grid-auto-flow: dense;
+    grid-gap: 1em;
+    border: 5px;
+    justify-content: center;
+    width: 80%;
+    max-width: 1200px;
+}
+
+.card{
+    overflow: hidden;
+}
+
+.card img{
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+
+/* Comic Book Grid Layout*/
+.Gallery2 {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 4fr));
+    grid-auto-rows: 200px;
+    grid-auto-flow: dense;
+    grid-gap: 1em;
+    border: 5px;
+    justify-content: center;
+    width: 80%;
+    max-width: 1200px;
+}
+
+
+/* Arrow Pointing Right Next to Section Header*/
+.arrow {
+    border: solid rgb(240, 19, 30);
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+}
+
+.right{
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+
+footer{
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: white;
+    background-color: red;
+    padding-bottom:2px;
+}
+@media (min-width: 960px){
+    .Subtext .paragraph{
+        text-align: left;
+        position: absolute;
+        display: inline-flex;
+        z-index: 99;
+        bottom: 10px;
+        width: 60%;
+        max-height: 60%;
+        font-size: 30px;
+        top: 55%;
+        left: 64%;
+        transform: translate(-100%, -110%);
+        color: rgb(240, 19, 30)
+    }
+}
+
+@media (max-width:800px) {
+    #icon{
+        display: inline-flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        position: relative;
+        left: 10%;
+        margin-top: 85px;
+        width: 45px;
+        height: 45px;
+        
+    }   
+}
+
+@media (max-width:800px) {
+    nav{
+        display: none;
+    }
+}
